@@ -1,0 +1,48 @@
+{
+    "name": "topshelfcraft/commerce-acceptjs",
+    "description": "Accept.js (Authorize.net) payment gateway for Craft Commerce",
+    "version": "3.0.0-beta.1",
+    "type": "craft-plugin",
+    "keywords": [
+        "Accept.js",
+        "AcceptJS",
+        "authorize",
+        "Authorize.net",
+        "craft",
+        "cms",
+        "commerce",
+        "craftcms",
+        "craft-commerce",
+        "craft-plugin",
+        "gateway"
+    ],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Top Shelf Craft (Michael Rog)",
+            "homepage": "https://topshelfcraft.com"
+        }
+    ],
+    "support": {
+        "email": "support@topshelfcraft.com",
+        "issues": "https://github.com/topshelfcraft/commerce-acceptjs/issues"
+    },
+    "require": {
+        "authorizenet/authorizenet": "^1.9",
+        "craftcms/cms": "^3.0",
+        "craftcms/commerce": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "topshelfcraft\\acceptjs\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Accept.js for Craft Commerce",
+        "handle": "acceptjs",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/topshelfcraft/commerce-acceptjs/master/CHANGELOG.md",
+        "class": "topshelfcraft\\acceptjs\\Acceptjs"
+    }
+}
