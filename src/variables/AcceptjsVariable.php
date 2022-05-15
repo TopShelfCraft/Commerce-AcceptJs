@@ -37,4 +37,20 @@ class AcceptjsVariable
 		return Acceptjs::$plugin->getSettings()->environment;
 	}
 
+	/**
+	 * @return string
+	 */
+	public function getScriptUrl()
+	{
+		return $this->getEnvironment() == 'production' ? 'https://js.authorize.net/v1/Accept.js' : 'https://jstest.authorize.net/v1/Accept.js';
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getScriptHtml()
+	{
+		return '<script type="text/javascript" src="'  . $this->getScriptUrl() . '" charset="utf-8"></script>';
+	}
+
 }
